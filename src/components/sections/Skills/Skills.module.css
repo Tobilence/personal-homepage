@@ -1,0 +1,70 @@
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--deep-purple);
+	padding: 10% 5%;
+	row-gap: 5vh;
+}
+
+.skillWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 5vh;
+}
+
+.skillTextWrapper {}
+
+.text {
+	color: white;
+}
+
+.image {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.divider {
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	height: 3px;
+	border-radius: 5px;
+}
+
+@media only screen and (min-width: 640px) {
+
+	.wrapper {
+		margin: 10vh 0 0 0;
+		padding: 0 5%;
+		background: linear-gradient(to bottom, var(--deep-purple) 0%, var(--deep-purple) 95%, var(--off-white) 95%);
+	}
+
+	.skillWrapper {
+		justify-content: space-evenly;
+		align-items: center;
+		column-gap: 5vw;
+		transform: translateY(-5vh);
+	}
+
+	.image {
+		width: 40%;
+		margin: 0 auto;
+		border-radius: 5px;
+		z-index: 500;
+		position: relative;
+	}
+
+	.desktopSkillDescriptionAndLineWrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		column-gap: 5vw;
+		justify-content: space-around;
+	}
+
+	.divider {
+		width: 25vw;
+	}
+}

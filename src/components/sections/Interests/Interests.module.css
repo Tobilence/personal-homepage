@@ -1,0 +1,37 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5% 10%;
+	row-gap: 5vh;
+	margin: 5% 0;
+}
+
+
+/* Box */
+.interestsBoxWrapper {
+	padding-top: 1vh;
+	border: 3px solid black;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100%;
+	row-gap: 1vh;
+}
+
+.interestBoxText {
+	padding: 0;
+	text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.wrapper {
+		flex-direction: row;
+		column-gap: 5%;
+		margin: 0;
+	}
+
+	.interestsBoxWrapper {
+		max-width: 30%;
+	}
+}

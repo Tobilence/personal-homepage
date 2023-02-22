@@ -1,0 +1,11 @@
+.wrapper {
+	position: relative;
+}
+
+.underline {
+	position: absolute;
+	width: 75%;
+	height: 3px;
+	border-radius: 5px;
+	background-color: #8C5F66;
+}
