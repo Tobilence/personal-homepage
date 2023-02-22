@@ -2,6 +2,18 @@ import { strings } from "../../../../data/Data";
 import useWindowSize from "../../../hooks/useWindowSize";
 import styles from "./Skills.module.css"
 
+const computeFlexDirection = (isMobile: boolean, idx: number) => {
+	if (isMobile) {
+		return "column";
+	} else {
+		if (idx % 2) {
+			return "row";
+		} else {
+			return "row-reverse";
+		}
+	}
+}
+
 const Skills = () => {
 
 	const { isMobile } = useWindowSize();
@@ -13,7 +25,7 @@ const Skills = () => {
 					<div
 						key={skill.title}
 						className={styles.skillWrapper}
-						style={{ flexDirection: idx % 2 ? "row" : "row-reverse" }}
+						style={{ flexDirection: computeFlexDirection(isMobile, idx) }}
 					>
 						<div
 							className={styles.desktopSkillDescriptionAndLineWrapper}

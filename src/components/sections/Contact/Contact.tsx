@@ -8,7 +8,8 @@ const Contact = () => {
 			<input type="text" placeholder="Subject"></input>
 			<textarea placeholder="Inquiry / Question"></textarea>
 			<input type="text" placeholder="How should I respond? (Please enter your Email / Phone)"></input>
-			<button style={{ width: "100%", borderRadius: 5 }}>Submit</button>
+			<button style={{ width: "100%", marginTop: "10px", borderRadius: "5px" }}>Submit</button>
+			<div style={{ height: "10vh" }}></div>
 		</div>
 	);
 }

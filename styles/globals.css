@@ -68,6 +68,14 @@ select {
   resize: none;
 }
 
+input[type=text]:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--deep-purple);
+  box-shadow: 0 0 5px var(--deep-purple);
+}
+
+
 button {
   background-color: var(--deep-purple);
   border: none;
@@ -80,6 +88,7 @@ button {
   padding: 15px 25px;
   cursor: pointer;
   transition: 500ms;
+  font-family: Avenir;
 }
 
 button:hover {
