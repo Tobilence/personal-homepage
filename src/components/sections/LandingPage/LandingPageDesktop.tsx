@@ -1,6 +1,5 @@
 import Image from "next/image";
 import useWindowSize from "../../../hooks/useWindowSize";
-import Button from "../../shared/Button/Button";
 import UnderlineText from "../../shared/UnderlineText/UnderlineText";
 import styles from "./LandingPage.module.css"
 
@@ -13,7 +12,7 @@ const LandingPageDesktop = () => {
 	return (
 		<div className={styles.desktopWrapper}>
 			<div className={styles.heroTextWrapperDesktop}>
-				<h3 className={styles.heroText}>Hi, I'm Tobi</h3>
+				<h3 className={styles.heroText}>Hi, I`&#39;`m Tobi</h3>
 				<UnderlineText>
 					<h1 style={{ fontSize: "3rem" }} className={styles.heroText}>Freelance Software Developer</h1>
 				</UnderlineText>
