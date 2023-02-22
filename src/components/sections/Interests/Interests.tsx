@@ -1,27 +1,26 @@
+import Image from "next/image";
+import { strings } from "../../../../data/Data";
 import styles from "./Interests.module.css"
-import InterestsBox from "./InterestsBox";
 
 const Interests = () => {
 
 	return (
 		<div className={styles.wrapper}>
-			<InterestsBox
-				title="Software Development"
-				src="/images/laptop.png"
-				text="Lorem ipsum lalala asdo iöghsü sdjgnaüsk djgn sdajgn"
-			/>
-
-			<InterestsBox
-				title="Data Science"
-				src="/images/data.png"
-				text="Lorem ipsum lalala asdo iöghsü sdjgnaüsk djgn sdajgn"
-			/>
-
-			<InterestsBox
-				title="Psychology"
-				src="/images/brain.png"
-				text="Lorem ipsum lalala asdo iöghsü sdjgnaüsk djgn sdajgn"
-			/>
+			{
+				strings.interests.map(interest => (
+					<div key={interest.title} className={styles.interestsBoxWrapper}>
+						<h4 className={styles.interestBoxText}>{interest.title}</h4>
+						<Image
+							src={interest.img}
+							alt="Icon"
+							width={128}
+							height={128}
+							style={{ marginTop: "2vh" }}
+						/>
+						<p className={styles.interestBoxText} style={{ marginBottom: "3vh" }}>{interest.text}</p>
+					</div>
+				))
+			}
 		</div>
 
 	);
