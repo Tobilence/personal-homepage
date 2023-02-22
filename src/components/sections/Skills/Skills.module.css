@@ -42,7 +42,7 @@
 	.wrapper {
 		margin: 10vh 0 0 0;
 		padding: 0 5%;
-		background: linear-gradient(to bottom, var(--deep-purple) 0%, var(--deep-purple) 95%, var(--off-white) 95%);
+		background: linear-gradient(to bottom, var(--deep-purple) 0%, var(--deep-purple) 93%, var(--off-white) 93%);
 	}
 
 	.skillWrapper {

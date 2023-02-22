@@ -3,17 +3,17 @@ export const strings = {
 		{
 			title: "Backend",
 			text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis, diam quis elementum tincidunt. adipiscing elit. Etiam",
-			imgSrc: "/images/sample_pic.png"
+			imgSrc: "/images/system_design.png"
 		},
 		{
 			title: "iOS Development",
 			text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis, diam quis elementum tincidunt. adipiscing elit. Etiam",
-			imgSrc: "/images/sample_pic.png"
+			imgSrc: "/images/plant_care.png"
 		},
 		{
 			title: "Webdevelopment",
 			text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis, diam quis elementum tincidunt. adipiscing elit. Etiam",
-			imgSrc: "/images/sample_pic.png"
+			imgSrc: "/images/simple_track_1.png"
 		}
 	]
 }
