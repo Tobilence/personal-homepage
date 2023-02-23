@@ -1,6 +1,7 @@
 import styles from "./Contact.module.css"
 import emailjs from "@emailjs/browser";
 import { ChangeEvent, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const serviceId = "gmail_service";
 const templateId = "template_xyxud9g";
@@ -36,16 +37,14 @@ const Contact = () => {
 		const err = computeErrors();
 		setErrors(err);
 		if (!err.contact && !err.inquiry && !err.subject) {
-			emailjs
+			const emailPromise = emailjs
 				.send(serviceId, templateId, templateParams, publicKey)
-				.then(
-					(response) => {
-						console.log('SUCCESS!', response.status, response.text, response);
-					},
-					(err) => {
-						console.log('FAILED...', err);
-					},
-				);
+
+			toast.promise(emailPromise, {
+				pending: "trying to get in touch... ",
+				success: "Success! I will get back to you as soon as I can.",
+				error: "Sorry, something went wrong. Please try again later!"
+			})
 		}
 	}
 
@@ -87,6 +86,18 @@ const Contact = () => {
 				Submit
 			</button>
 			<div style={{ height: "10vh" }}></div>
+			<ToastContainer
+				position="bottom-center"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="colored"
+			/>
 		</div>
 	);
 }

@@ -7,6 +7,9 @@ body {
   --beige: #D4BC9F;
   --deep-purple: #5E4B56;
   --off-white: #f5f5f5;
+
+  --toastify-toast-width: clamp(320px, 90%, 500px);
+  --toastify-font-family: Avenir;
 }
 
 a {
