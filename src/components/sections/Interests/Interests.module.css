@@ -10,7 +10,7 @@
 
 /* Box */
 .interestsBoxWrapper {
-	padding-top: 1vh;
+	padding: 1vh 15px 0 15px;
 	border: 3px solid black;
 	display: flex;
 	align-items: center;

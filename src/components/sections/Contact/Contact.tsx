@@ -6,7 +6,6 @@ import { toast, ToastContainer } from "react-toastify";
 const serviceId = "gmail_service";
 const templateId = "template_xyxud9g";
 const publicKey = "GZaCktjkYLR4-WG8r";
-const privateKey = "j4_B84GlxPvIMaEUWNEm4";
 
 interface ContactFormFields {
 	subject: string,
@@ -20,9 +19,9 @@ const Contact = () => {
 	const [errors, setErrors] = useState({ subject: false, inquiry: false, contact: false });
 
 	const templateParams = {
-		subject: 'Test',
-		inquiry: 'Check this out!',
-		contact_info: "Soem email from customer"
+		subject: contactData.subject,
+		inquiry: contactData.inquiry,
+		contact_info: contactData.contact
 	};
 
 	const computeErrors = () => {
