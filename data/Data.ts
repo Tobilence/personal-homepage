@@ -23,7 +23,7 @@ export const strings = {
 	skills: [
 		{
 			title: "System Design",
-			text: "I value clean code a lot. Having a solid structure is key when it comes to scaling a project whilst simultaneously improving readability, stability and performance. I will plan and customize the syste, architecture to fit your project's needs. ",
+			text: "I value clean code a lot. Having a solid structure is key when it comes to scaling a project whilst simultaneously improving readability, stability and performance. I will plan and customize the system, architecture to fit your project's needs. ",
 			imgSrc: "/images/system_design.png"
 		},
 		{
@@ -33,7 +33,7 @@ export const strings = {
 		},
 		{
 			title: "iOS Development",
-			text: "Not on the web? No worries, I also develop for the iOS platform. Note that this is not just compiling your web code to run on iOS. It is important to adjust your app to look and feel native to its end users. To ensure that this requirement is met, I will create your project using modern frameworks made by Apple that are designed to fit it's platforms needs and maximize user satisfaction.",
+			text: "Not on the web? No worries, I also develop for the iOS platform. Note that this is not just compiling your web code to run on iOS. It is important to adjust your app to look and feel native to its end users. To ensure that this requirement is met, I will create your project using modern frameworks made by Apple that are designed to fit its platforms needs and maximize user satisfaction.",
 			imgSrc: "/images/plant_care.png"
 		}
 	]
