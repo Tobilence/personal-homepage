@@ -43,6 +43,10 @@
 	align-items: center;
 }
 
+.ctaButton {
+	width: 250px;
+}
+
 @media only screen and (min-width: 640px) {
 	.heroText {
 		color: black;

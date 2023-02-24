@@ -1,6 +1,9 @@
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { strings } from "../../../../data/Data";
 import useWindowSize from "../../../hooks/useWindowSize";
 import styles from "./Skills.module.css"
+import { motion, useAnimation } from "framer-motion"
 
 const computeFlexDirection = (isMobile: boolean, idx: number) => {
 	if (isMobile) {
@@ -19,10 +22,10 @@ const Skills = () => {
 	const { isMobile } = useWindowSize();
 
 	return (
-		<div className={styles.wrapper}>
+		<section id="skills" className={styles.wrapper}>
 			{
 				strings.skills.map((skill, idx) => (
-					<div
+					<motion.div
 						key={skill.title}
 						className={styles.skillWrapper}
 						style={{ flexDirection: computeFlexDirection(isMobile, idx) }}
@@ -31,7 +34,11 @@ const Skills = () => {
 							className={styles.desktopSkillDescriptionAndLineWrapper}
 							style={{ flexDirection: idx % 2 ? "row-reverse" : "row" }}
 						>
-							{!isMobile && <div className={styles.divider}></div>}
+							{!isMobile &&
+								<motion.div
+									className={styles.divider}
+								></motion.div>
+							}
 							<div className={styles.skillTextWrapper}>
 								<h3 className={styles.text}>{skill.title}</h3>
 								<p className={styles.text} style={{ marginBottom: 0 }}>{skill.text}</p>
@@ -41,10 +48,10 @@ const Skills = () => {
 						{(idx < strings.skills.length - 1 && isMobile) &&
 							<div className={styles.divider}></div>
 						}
-					</div>
+					</motion.div>
 				))
 			}
-		</div>
+		</section>
 	);
 }
 

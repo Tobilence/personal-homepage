@@ -38,6 +38,7 @@ const Contact = () => {
 		if (!err.contact && !err.inquiry && !err.subject) {
 			const emailPromise = emailjs
 				.send(serviceId, templateId, templateParams, publicKey)
+				.then()
 
 			toast.promise(emailPromise, {
 				pending: "trying to get in touch... ",
@@ -53,7 +54,7 @@ const Contact = () => {
 	}
 
 	return (
-		<div className={styles.wrapper}>
+		<section id="contact" className={styles.wrapper}>
 			<h1 style={{ textAlign: "center", fontSize: "3rem", marginBottom: "1rem", fontWeight: 400 }}>Contact Me</h1>
 			<input
 				type="text"
@@ -96,8 +97,9 @@ const Contact = () => {
 				draggable
 				pauseOnHover
 				theme="colored"
+
 			/>
-		</div>
+		</section>
 	);
 }
 
