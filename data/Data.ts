@@ -1,7 +1,7 @@
 export const strings = {
 	about: {
 		title: "About Me",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis, diam quis elementum tincidunt, neque dolor interdum eros, sed euismod turpis augue quis mi. Aenean id rutrum velit. Donec eleifend dolor sed auctor molestie. Phasellus justo dui, feugiat ac aliquam at, euismod pretium mauris. Phasellus porttitor sit amet nibh ac feugiat. Suspendisse congue tincidunt eros. Pellentesque viverra elementum neque et vulputate. Sed vitae lobortis elit. Morbi nec diam sed turpis efficitur fermentum non eu ex. Aenean mattis tincidunt tellus at tincidunt. Suspendisse et tempus metus. Nunc cursus magna eu"
+		text: "In 2020 I graduated from the higher technical college HTL Spengergasse in the computer science department. Since then I am working as a freelance software developer while simultaneously studying psychology and data science. I am fascinated by the impact technology can have on our lives, how we interact with technology and how we can use technology to become both happier and healthier. This is exactly why I love the combination of my degrees. Research in psychology gives us valuable information about ourselves. We can then use this information to create smart artificial systems that help us in our day to day lives."
 	},
 	interests: [
 		{
