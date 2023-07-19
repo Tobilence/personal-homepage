@@ -8,7 +8,7 @@ const LandingPageDesktop = () => {
 			<div className={styles.heroTextWrapperDesktop}>
 				<h3 className={styles.heroText}>Hi, I&#39;m Tobi</h3>
 				<UnderlineText>
-					<h1 style={{ fontSize: "3rem" }} className={styles.heroText}>Freelance Software Developer</h1>
+					<h1 style={{ fontSize: "3rem" }} className={styles.heroText}>Fullstack Software Developer</h1>
 				</UnderlineText>
 				<p style={{ fontSize: "1.5rem" }} className={styles.heroText}>Data Science & Psychology Student</p>
 				<a href="#skills">

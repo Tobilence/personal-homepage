@@ -14,7 +14,7 @@ const LandingPageMobile = () => {
 			<div className={styles.imageOverlay}></div>
 			<div className={styles.heroTextWrapper}>
 				<h3 className={styles.heroText}>Hi, I&#39;m Tobi</h3>
-				<h1 className={styles.heroText}>Freelance Software Developer</h1>
+				<h1 className={styles.heroText}>Fullstack Software Developer</h1>
 				<p className={styles.heroText}>Data Science & Psychology Student</p>
 			</div>
 		</div>
